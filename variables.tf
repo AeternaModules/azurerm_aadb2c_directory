@@ -1,6 +1,6 @@
-variable "aadb2c_directorys" {
+variable "aadb2c_directories" {
   description = <<EOT
-Map of aadb2c_directorys, attributes below
+Map of aadb2c_directories, attributes below
 Required:
     - data_residency_location
     - domain_name

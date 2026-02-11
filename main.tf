@@ -1,5 +1,5 @@
-resource "azurerm_aadb2c_directory" "aadb2c_directorys" {
-  for_each = var.aadb2c_directorys
+resource "azurerm_aadb2c_directory" "aadb2c_directories" {
+  for_each = var.aadb2c_directories
 
   data_residency_location = each.value.data_residency_location
   domain_name             = each.value.domain_name
