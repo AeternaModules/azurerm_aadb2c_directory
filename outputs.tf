@@ -1,3 +1,7 @@
+output "aadb2c_directories_id" {
+  description = "Map of id values across all aadb2c_directories, keyed the same as var.aadb2c_directories"
+  value       = { for k, v in azurerm_aadb2c_directory.aadb2c_directories : k => v.id }
+}
 output "aadb2c_directories_billing_type" {
   description = "Map of billing_type values across all aadb2c_directories, keyed the same as var.aadb2c_directories"
   value       = { for k, v in azurerm_aadb2c_directory.aadb2c_directories : k => v.billing_type }
